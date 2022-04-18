@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/back.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    font-size: 100px;
+    color: #212529;
+    text-transform: uppercase; 
+    line-height: 1.1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #212529;
+    margin: 60px auto;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 90px auto;
+    text-align: center;
+}
+
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #212529;
+    transition: color .2s linear;
+    position: relative;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #f77f00;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+    color: black;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #212529;
+    padding: 10px 30px;
+    color: #212529;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.btn:hover {
+    border: 3px solid #212529;
+    color: #f77f00;
+    background-color: #212529;
+}
+
+.slider {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-item {
+    position: relative;
+    padding: 20px 0;
+    border-top: 3px solid;
+    width: 23%;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity: .5;
+    transition: .2s linear;
+}
+
+.slider-item:hover {
+    opacity: 1;
+}
